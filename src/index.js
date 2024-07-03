@@ -5,10 +5,10 @@ document.addEventListener("keydown", event => {
   switch (event.key) {
     case "Enter":
       return Softkey.Enter(event);
-    case "ArrowDown":
-      return Navigation.Down(event);
-    case "ArrowUp":
-      return Navigation.Up(event);
+    case "ArrowRight":
+      return Navigation.Right(event);
+    case "ArrowLeft":
+      return Navigation.Left(event);
     case "SoftRight":
       return Softkey.SoftRight(event);
     default:

@@ -7,31 +7,27 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta name="theme-color" content="rgb(106, 0, 128)" />
-    <title>My first Vanilla App for KaiOS</title>
+    <title>Spotify for KaiOS</title>
     <link rel="stylesheet" type="text/css" href="/src/css/header.css" />
     <link rel="stylesheet" type="text/css" href="/src/css/input.css" />
-    <link rel="stylesheet" type="text/css" href="/src/css/softkey.css" />
     <link rel="stylesheet" type="text/css" href="/src/css/todos.css" />
     <link rel="stylesheet" type="text/css" href="/src/css/root.css" />
   </head>
 
   <body>
     <div id="root">
-      <header>
-        <span>ToDo List</span>
-      </header>
-
       <div class="input">
-        <input type="text" nav-selectable="true" autofocus />
-        <label>New task</label>
+        <button id="button" nav-index="0" href="#search">Search</button>
+        <button id="button" nav-index="1" href="#lib">Library</button>
       </div>
-
-      <div id="toDos" class="todos"></div>
-
-      <div id="softkey">
-        <label id="left"></label>
-        <label id="center">Insert</label>
-        <label id="right"></label>
+      
+      <div class="tabs" id="search">ouügfnasdfdfgfälDKFGBEAFDLÄKVBAJSDFJSKBASKFÄDSLVBARJISFDKJBIUGORJPAOYÖFDKBTHRIEJFSPRTGRHUEJFESIGSHUEJPEFHTUEJIPFSRBTRUGHOIJFEAGHUTAAIWF</div>
+      <div class="tabs" id="library">HGFJDÖAHGUJKGDHFGÄAFDKGHSDFGKAgjhadjgagfkghjadgafdöjglhdfgafdljgöööööööööööööööööööööööööööööööööööööööööööööö</div>
+      <div class="player"></div>
+      <div class="swkey">
+        <span class="skipPrevious"><img src="/assets/icons/prev.svg"></img></span>
+        <span class="togglePlay"><img src="/assets/icons/play.svg" class="playbackstate"></img></span>
+        <span class="skipNext"><img src="/assets/icons/next.svg"></img></span>
       </div>
     </div>
     <script src="/src/index.js"></script>
