@@ -6,29 +6,38 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="theme-color" content="rgb(106, 0, 128)" />
+    <meta name="theme-color" content="#191414" />
     <title>Spotify for KaiOS</title>
-    <link rel="stylesheet" type="text/css" href="/src/css/header.css" />
-    <link rel="stylesheet" type="text/css" href="/src/css/input.css" />
-    <link rel="stylesheet" type="text/css" href="/src/css/todos.css" />
     <link rel="stylesheet" type="text/css" href="/src/css/root.css" />
+    <link rel="stylesheet" type="text/css" href="/src/css/input.css" />
+    <link rel="stylesheet" type="text/css" href="/src/css/player.css" />
   </head>
 
   <body>
     <div id="root">
       <div class="input">
-        <button id="button" nav-index="0" href="#search">Search</button>
-        <button id="button" nav-index="1" href="#lib">Library</button>
+        <button id="button" nav-index="0" href="#search"><img src="/assets/icons/search.svg" height="15px" width="15px"></img> Search</button>
+        <button id="button" nav-index="1" href="#lib"><img src="/assets/icons/star-empty.svg" height="15px" width="15px"></img> Library</button>
       </div>
       
-      <div class="tabs" id="search">ouügfnasdfdfgfälDKFGBEAFDLÄKVBAJSDFJSKBASKFÄDSLVBARJISFDKJBIUGORJPAOYÖFDKBTHRIEJFSPRTGRHUEJFESIGSHUEJPEFHTUEJIPFSRBTRUGHOIJFEAGHUTAAIWF</div>
-      <div class="tabs" id="library">HGFJDÖAHGUJKGDHFGÄAFDKGHSDFGKAgjhadjgagfkghjadgafdöjglhdfgafdljgöööööööööööööööööööööööööööööööööööööööööööööö</div>
+      <div class="tabs" id="search">
+        <div class="preview">
+          <img src="https://wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&h=64&w=64"></img>
+          <div class="nexttoimage">
+            <span class="title">blablabla</span><hr></hr>
+            <span class="author">blablabla</span>
+          </div>
+        </div>
+      </div>
+      <div class="tabs" id="lib">
+      </div>
       <div class="player"></div>
       <div class="swkey">
         <span class="skipPrevious"><img src="/assets/icons/prev.svg"></img></span>
-        <span class="togglePlay"><img src="/assets/icons/play.svg" class="playbackstate"></img></span>
+        <span class="togglePlay"></span>
         <span class="skipNext"><img src="/assets/icons/next.svg"></img></span>
       </div>
+      <img src="/assets/icons/play.svg" class="playbackstate"></img>
     </div>
     <script src="/src/index.js"></script>
   </body>

@@ -1,11 +1,6 @@
-:root {
-  --statusbar-height: 2.6rem;
-  --softkeybar-height: 3rem;
-  --theme-color: #1DB954;
-  --spotify-black: #191414;
-  font-family: "Open Sans";
+body{
+  background-color: var(--spotify-grey);
 }
-
 .input {
   display: inline-flex;
   margin: 0;
@@ -13,6 +8,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  line-height: 1.5rem;
 }
 .input #button{
   width: 50%;
@@ -40,25 +36,36 @@
   height: 1rem;
   width: 100%;
   bottom: 0px;
-  z-index: 1;
-  text-align: center;
+  z-index: 2;
   line-height: 2rem;
+  text-align: center;
+  border-top: 2px solid var(--spotify-black);
 }
 .skipPrevious{
   position: fixed; 
+  padding-left: 5px;
   left: 0;
-  line-height: 1rem;
-  min-width: 1rem;
-  height: 1rem;
+  line-height: 0.9em;
+  height: 0.9rem;
   bottom: 0;
+  width: 49.5%;
+  z-index: 2;
+  background: var(--theme-color);
+  text-align: left;
+
 } 
 .skipNext{
+  padding-right: 5px;
   position: fixed; 
   right: 0;
-  line-height: 1rem;
-  min-width: 1rem;
-  height: 1rem;
+  line-height: 0.9rem;
+  width: 49.5%;
+  height: 0.9rem;
   bottom: 0;
+  z-index: 2;
+  background: var(--theme-color);
+  text-align: right;
+
 } 
 .togglePlay{
   position: fixed;
@@ -68,24 +75,27 @@
   left: calc(50%-1rem);
   background-color: var(--theme-color);
   color: var(--spotify-black);
-  border: none;
-  border-radius: 0.5rem;
   padding: 0;
-  z-index: 2;
+  z-index: 1;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border-style: solid;
+  border-color: var(--spotify-black);
+  border-width: 2px 2px 0px 2px;
 }
-.togglePlay img{
-  width: 60%;
-  height: 60%;
+.playbackstate{
+  position: fixed;
+  width: 1rem;
+  height: 1rem;
+  bottom: 0.5rem;
+  left: calc(50%-0.5rem);
+  z-index: 3;
 }
 .skipNext img{
-  height: 100%;
-  width: 100%;
+  height: 0.9rem;
+  width: 0.9rem;
 }
 .skipPrevious img{
-  height: 100%;
-  width: 100%;
-}
-
-.tabs{
-  display: none;
+  height: 0.9rem;
+  width: 0.9rem;
 }

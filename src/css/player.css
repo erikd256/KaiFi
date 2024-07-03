@@ -1,0 +1,55 @@
+.tabs{
+    position: fixed;
+    top: 1.4rem;
+    background-color: var(--theme-color);
+    color: var(--spotify-black);
+    height: calc(100%-2.4rem);
+    overflow-x: hidden;
+    word-wrap: break-word;
+    overflow-y: scroll;
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+  }
+  #search{
+    display: block;
+  }
+  #lib{
+    display: none;
+  }
+  .preview{
+    width: 95%;
+    height: 4rem;
+    margin-left: calc(50%-47.5%);
+    margin-top: 5px;
+    border-radius: 0.5rem;
+    background-color: var(--spotify-black);
+    color: var(--theme-color);
+    padding: 0;
+    text-align: left;
+    overflow: hidden;
+  }
+  .preview img{
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    float: left;
+  }
+  hr{
+    border: none;
+    border-top: 1px solid var(--theme-color);
+    margin: 2px;
+    width: calc(100-64px);
+  }
+  .nexttoimage{
+    float: right;
+    text-align: center;
+    width: calc(100%-64px);
+    padding: 5px;
+  }
+  .title{
+    font-size: larger;
+  }
+  .author{
+    font-size: smaller;
+  }

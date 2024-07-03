@@ -1,5 +1,3 @@
-import Softkey from "./softkey";
-
 (() => {
   const firstElement = document.querySelectorAll(".input #button")[0];
   firstElement.setAttribute("nav-selected", "true");
@@ -22,35 +20,37 @@ const selectElement = selectElement =>
     if (element.nodeName === 'BUTTON') {
       selectThisElement ? element.focus() : element.blur();
     }
+    
   });
 
 const Right = event => {
   const allElements = getAllElements();
   const currentIndex = getTheIndexOfTheSelectedElement();
   const setIndex = currentIndex + 1;
+  document.querySelector("#search").style.display = "none";
+  document.querySelector("#lib").style.display = "block";
   selectElement(allElements[setIndex] || allElements[0]);
-  setSoftkey(setIndex);
 };
 
 const Enter = event => {
-  const allElements = getAllElements();
-  const currentIndex = getTheIndexOfTheSelectedElement();
-  const href = allElements[currentIndex].getAttribute("href");
-  console.log(href)
+  
 }
 
 const Left = event => {
   const allElements = getAllElements();
   const currentIndex = getTheIndexOfTheSelectedElement();
   const setIndex = currentIndex - 1;
+  document.querySelector("#lib").style.display = "none";
+  document.querySelector("#search").style.display = "block";
   selectElement(allElements[setIndex] || allElements[0]);
-  setSoftkey(setIndex);
 };
 
-const setSoftkey = setIndex =>
-  Softkey.setLabels({
-    center: Enter,
-    right: setIndex === 0 ? "" : "Delete"
-  });
+const SoftRight = event => {
+  console.log("Skip to next song!")
+};
 
-export default { Right, Left, selectElement };
+const SoftLeft = event => {
+  console.log("Skip to prev song")
+};
+
+export default { SoftRight, SoftLeft, Right, Left, Enter, selectElement };
