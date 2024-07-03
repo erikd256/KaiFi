@@ -1,19 +1,15 @@
-# Sample Vanilla app for KaiOS
+# KaiFi - the simplest Spotify client for KaiOS
 
-Simple example of a to-do list, for more information see [KaiOS Developer Portal](https://developer.kaiostech.com/getting-started/build-your-first-app/sample-code#vanilla)
+## To-Do's
 
-![](./docs/to-do-on-input.png)
-![](./docs/to-do.png)
+- [ ]
+- [ ]
 
-In portrait devices
+## Working
 
-![](./docs/to-do-portrait.gif)
+- [ ]
 
-In landscape devices
-
-![](./docs/to-do-landscape.gif)
-
-## Start
+## Starting KaiFi
 
 ```console
 npm run start
