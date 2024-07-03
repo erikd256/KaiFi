@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "name": "Kai-Fi",
-  "description": "Simple spotify client for KaiOS",
+  "name": "KaiFi",
+  "description": "Simple spotify client for KaiOS. No more LoFi or HiFi. Let's listen KaiFi!",
   "type": "web",
   "launch_path": "/index.html",
   "icons": {
