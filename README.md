@@ -3,9 +3,8 @@
 ## To-Do's
 
 - [ ] Finish Layout
-- [ ] Implement Spotify Web Playback SDK (https://developer.spotify.com/documentation/web-api)
-- [ ] Create Spotify audio player (https://developer.spotify.com/documentation/web-playback-sdk)
-- [ ] Create Spotify login (https://developer.spotify.com/documentation/web-api/howtos/web-app-profile)
+- [ ] Implement free spotify api (https://git.gay/h/librespot-js/src/branch/main/docs/examples)
+- [ ] Create additional functions (download songs etc.)
 
 ## Working
 
