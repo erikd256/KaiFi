@@ -18,7 +18,7 @@
     "parcel-bundler": "^1.6.1",
     "kdeploy": "@filipe_x3/kdeploy"
   },
-  "license":  "GPL-3.0-or-later",
+  "license":  "GPL-3.0",
   "homepage": "https://codeberg.org/erikd256/KaiFi",
   "keywords": [
     "spotify",
