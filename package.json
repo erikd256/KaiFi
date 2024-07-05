@@ -12,13 +12,15 @@
     "app:start": "kdeploy build start",
     "app:stop": "kdeploy build stop"
   },
-  "dependencies": {},
+  "dependencies": {
+    "librespot": "^0.2.1"
+  },
   "devDependencies": {
     "@babel/core": "7.2.0",
-    "parcel-bundler": "^1.6.1",
-    "kdeploy": "@filipe_x3/kdeploy"
+    "kdeploy": "@filipe_x3/kdeploy",
+    "parcel-bundler": "^1.6.1"
   },
-  "license":  "GPL-3.0",
+  "license": "GPL-3.0",
   "homepage": "https://codeberg.org/erikd256/KaiFi",
   "keywords": [
     "spotify",
