@@ -1,5 +1,4 @@
 import Navigation from "./js/navigation";
-
 document.addEventListener("keydown", event => {
   switch (event.key) {
     case "Enter":
@@ -12,6 +11,10 @@ document.addEventListener("keydown", event => {
       return Navigation.SoftRight(event);
     case "SoftLeft":
       return Navigation.SoftLeft(event);
+    case "ArrowDown":
+      return Navigation.Down(event);
+    case "ArrowUp":
+      return Navigation.Up(event);
     default:
       return;
   }

@@ -13,6 +13,7 @@
     "app:stop": "kdeploy build stop"
   },
   "dependencies": {
+    "@babel/plugin-transform-private-methods": "^7.24.7",
     "librespot": "^0.2.1"
   },
   "devDependencies": {
